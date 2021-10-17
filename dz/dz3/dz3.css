@@ -1,0 +1,22 @@
+body {
+    background-color: #AA3E2B;
+}
+
+
+.info {
+    height: 200px;
+    width: 400px;
+}
+
+.main-container {
+    background-color: #823831;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.biography {
+    padding: 40px 170px;
+    background-color: #813C45;
+}
+
