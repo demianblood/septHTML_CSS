@@ -1,0 +1,98 @@
+.wrap {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*3 картинка*/
+.top-box-a {
+    margin: 10px;
+    height: 30%;
+}
+
+.main-container {
+    display: flex;
+    margin: 10px;
+    height: 65%;
+}
+
+.info {
+    margin: 10px;
+    width: 65%;
+}
+
+.info-b {
+    margin: 10px;
+    height: 60%;
+}
+
+.info-cde {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    height: 35%;
+}
+
+.info-cde__block {
+    width: 31%;
+}
+
+.main-container-f {
+    width: 30%;
+}
+
+/*4 картинка*/
+.header_a{
+    margin: 10px;
+    height: 40%;
+}
+.container{
+    display: flex;
+    margin: 10px;
+    height: 55%;
+}
+.container_information{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+}
+.information {
+    display: flex;
+    margin: 10px;
+    height: 100%;
+}
+.info-box{
+    margin: 5px;
+    width: 30%;
+}
+/*6 картинка*/
+.top-block{
+    height: 40%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.up-block{
+    width: 48%;
+}
+.middle-block{
+    height: 25%;
+    margin-bottom: 10px;
+}
+.footer-block{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+.down-block{
+    width:30%;
+}
