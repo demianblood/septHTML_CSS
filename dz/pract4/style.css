@@ -1,0 +1,87 @@
+/*cw4-1*/
+.wrap {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.border {
+    border: 4px solid #8BB2BF;
+}
+
+/*header-block*/
+.header-block {
+    margin: 10px 30px;
+    height: 45%;
+    border-radius: 35px;
+}
+
+.some-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #102B3E;
+    height: 20%;
+    margin: 30px;
+}
+
+.block-with-block {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block_in_block-with-block {
+    height: 80%;
+    width: 20%;
+}
+
+.four-block {
+    height: 70%;
+    border-radius: 10px;
+}
+
+.some-text-in-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    text-align: center;
+    color: #102B3E;
+}
+
+/*central block*/
+.block-center {
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block_in_block-center {
+    width: 30%;
+    height: 80%;
+}
+
+.circle {
+    width: 75%;
+    height: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12%;
+}
+
+.some-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    text-align: center;
+    color: #CED8E1;
+}
