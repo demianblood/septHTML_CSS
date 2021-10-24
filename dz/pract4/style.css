@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     color: #102B3E;
-    height: 20%;
+    height: fit-content;
     margin: 30px;
 }
 
