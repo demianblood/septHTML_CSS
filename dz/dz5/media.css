@@ -1,3 +1,35 @@
-@media screen and (max-width: 992px){
-
+@media screen and (max-width: 932px) {
+    .wrap {
+        width: auto;
+        padding: 0 20px;
+    }
+    .up-block {
+        display: none;
+    }
+    /*header*/
+    .nav__button {
+        display: flex;
+    }
+    .nav{
+        display: none;
+    }
+    /*main proposition*/
+    .proposition__list{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /*about*/
+    .about{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /*content*/
+    .content__block{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /*some info*/
+    .some-info{
+        flex-direction: column;
+    }
 }
