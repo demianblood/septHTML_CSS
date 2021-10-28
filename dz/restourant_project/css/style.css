@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Tinos', serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* header */
+.header {
+    height: 100vh;
+    background: url("../image/bg.png") no-repeat center/cover;
+}
+
+.header__top {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    padding-right: 25px;
+}
+
+.header__menu.active {
+    display: flex;
+    top: 65px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #000000;
+    height: 93vh;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    column-gap: 23px;
+}
+
+.nav__item a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav__item img {
+    width: 20px;
+}
+
+.nav__btn_mobile {
+    display: none;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
+
+.header__phone {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    border-left: 2px solid #ffffff;
+    padding-left: 15px;
+}
+
+.header__button {
+    height: 47px;
+    background: #FF7400;
+    padding: 0 19px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+}
+
+.header__main {
+    padding-top: 204px;
+}
+
+.header__main .header__button {
+
+    margin-top: 35px;
+}
+
+.header__title {
+    font-style: normal;
+    font-weight: normal;
+    max-width: 500px;
+    color: #D67E35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__title h2 {
+    font-size: 50px;
+    line-height: 57px;
+}
+
+.header__title h1 {
+    font-size: 80px;
+    line-height: 92px;
+}
+
+.header__title p {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.header__title p::before,
+.header__title p::after {
+    content: "";
+    display: block;
+    width: 61px;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+
+.header__title p::before {
+    margin-right: 10px;
+}
+
+.header__title p::after {
+    margin-left: 10px;
+}
+
+.header__down {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.header__block__info {
+    width: 349px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.header__block__info img {
+    padding-top: 35px;
+}
+.header__block__info p {
+    padding: 20px 34px;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #656363;
+}
+.header__block__info p span {
+    color: #BC9060;
+}
+
