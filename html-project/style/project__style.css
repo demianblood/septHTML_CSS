@@ -1,0 +1,124 @@
+/*reset style*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*navigate*/
+.nav{
+    height: 36px;
+    justify-content: space-between;
+    background-color: #0F2438;
+}
+.nav__content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 30px;
+}
+.location img{
+    height: 20px;
+    padding-right: 10px;
+}
+.mobile_btn_nav{
+    display: none;
+}
+/*contact*/
+.header{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.header__contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__contact__company{
+
+}
+.logo{}
+.info__company h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+/*header__center*/
+.header__center{
+    display: flex;
+    align-items: center;
+}
+.header__contact__worktime{
+    margin-right: 60px;
+    column-gap: 10px;
+}
+.header__contact__worktime p{
+    text-align: right;
+}
+.header__contact__address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+/*header__right*/
+.header__right{
+
+}
+.header__contact__whatsapp{
+    padding: 8px;
+    background: #E1EFD0;
+    column-gap: 10px;
+    margin-right: 60px;
+}
+.header__contact__phone{
+    justify-content: flex-end;
+}
+.header__contact__phone span{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.header__contact__phone p{
+    text-align: right;
+    border-bottom: 1px solid #000000;
+}
+/*header__cabinet*/
+.header__cabinet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,77 @@
+@media screen and (max-width: 414px){
+    .wrap{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .text_nav{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .nav{
+        justify-content: flex-start;
+    }
+    .mobile_btn_nav{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .nav__content select, mobile_img{
+        display: none;
+    }
+    .header__center{
+        display: none;
+    }
+    .header__right{
+        flex-direction: column-reverse;
+    }
+    .header__contact__whatsapp{
+        padding: 0;
+        margin-right:0;
+    }
+}
+@media screen and (max-width: 768px){
+    .wrap{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .text_info{
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .mobile_btn_nav{
+        display: flex;
+        align-items: center;
+    }
+    .mobile-hover{
+        display: none;
+    }
+    .header__center{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header__center img{
+        width: 20px;
+    }
+    .header__contact__worktime{
+        margin-right: 0;
+    }
+    .header__contact__address{
+        padding-top: 15px;
+    }
+    .header__right{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+    .header__right span{}
+    .header__right p{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .header__contact__whatsapp{
+        padding: 0;
+        margin-right:0;
+    }
+}
