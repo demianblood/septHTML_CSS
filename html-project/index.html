@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style/constant-style.css">
     <link rel="stylesheet" href="style/project__style.css">
     <link rel="stylesheet" href="style/project__media.css">
@@ -17,100 +17,575 @@
 <div class="nav wrap">
     <div class="nav__content">
         <div class="df_jc_ac"><img class="mobile_img" src="image/placeholder%201.png" alt="local">
-            <p class="text_nav">Ваш город: Москва</p></div>
+            <p class="text_nav text__color-white">Ваш город: Москва</p></div>
         <select class="selector back__black" name="Информацыя" id="information">
-            <option selected value="information"><p class="text_nav">Информацыя</p></option>
+            <option selected value="information"><p class="text_nav text__color-white">Информацыя</p></option>
         </select>
         <select class="selector back__black" name="samewerking" id="Samewerking">
-            <option selected value="samewerking"><p class="text_nav">Сотрудничество</p></option>
+            <option selected value="samewerking"><p class="text_nav text__color-white">Сотрудничество</p></option>
         </select>
     </div>
     <div class="nav__content mobile-hover">
-        <div class="text_nav">Доставка</div>
-        <div class="text_nav">Оплата</div>
-        <div class="text_nav">Гарантия</div>
-        <div class="text_nav">Новости</div>
-        <div class="text_nav">Журнал</div>
-        <div class="text_nav">О магазине</div>
-        <div class="text_nav">Контакты</div>
+        <div class="text_nav text__color-white">Доставка</div>
+        <div class="text_nav text__color-white">Оплата</div>
+        <div class="text_nav text__color-white">Гарантия</div>
+        <div class="text_nav text__color-white">Новости</div>
+        <div class="text_nav text__color-white">Журнал</div>
+        <div class="text_nav text__color-white">О магазине</div>
+        <div class="text_nav text__color-white">Контакты</div>
     </div>
     <div class="mobile_btn_nav">
         <select name="mobile" id="hr-mobile" class="selector back__black">
-            <option value="text"><p class="text_nav">Еще</p></option>
+            <option value="text"><p class="text_nav text__color-white">Еще</p></option>
         </select>
     </div>
 </div>
 <!--contact-->
 <div class="header wrap">
     <div class="header__contact">
-        <div class="header__contact__company df_jc_ac">
+        <div class="header__contact__company df_jc_ac ">
             <div class="logo"><img class="image__color" src="image/logo.png" alt="logo"></div>
             <div class="info__company">
                 <h2>AVT-ZAP</h2>
-                <p class="text_info">
+                <p class="text_info text__color-dark">
                     Интернет-магазин запчастей <br>
                     для АКПП</p>
             </div>
         </div>
-<!--header__center-->
+        <!--header__center-->
         <div class="header__center">
-            <div class="header__contact__worktime df_jc_ac">
+            <div class="header__contact__worktime df_jc_ac text__color-dark">
                 <img class="image__color" src="image/time%20(1)%201.png" alt="time">
-                <p class="text_info">Мы работаем: будни - 9:00-21:00 <br>
+                <p class="text_info text__color-dark">Мы работаем: будни - 9:00-21:00 <br>
                     сб. - 10:00-15:00</p>
             </div>
-            <div class="header__contact__address">
+            <div class="header__contact__address text__color-dark">
                 <img class="image__color" src="image/location2.png" alt="local">
-                <p class="text_info">Невский пр-т, д. 45</p>
+                <p class="text_info text__color-dark">Невский пр-т, д. 45</p>
             </div>
         </div>
-<!--header__right-->
+        <!--header__right-->
         <div class="header__right df_jc_ac">
-            <div class="header__contact__whatsapp df_jc_ac">
+            <div class="header__contact__whatsapp df_jc_ac text__color-dark">
                 <img src="image/whatsapp%20(2)%201.png" alt="whats app">
-                <p>Напишите нам в WhatsApp</p>
+                <p class="text__color-dark">Напишите нам в WhatsApp</p>
             </div>
-            <div class="header__contact__phone">
-                <span>+7 383 291 92 86</span>
-                <p>форма обратной связи</p>
+            <div class="header__contact__phone text__color-dark">
+                <span class="text__color-dark">+7 383 291 92 86</span>
+                <p class="text__color-dark">форма обратной связи</p>
             </div>
         </div>
     </div>
-<!--header__cabinet-->
+    <!--header__cabinet-->
     <div class="header__cabinet ">
-        <div>
-            <button class="buttons"><img src="image/acordion.png" alt="katalog"> Каталог</button>
+        <div class="cabinet__left">
+            <button class="buttons back__blue"><img src="image/acordion.png" alt="katalog"> <span>Каталог</span>
+            </button>
         </div>
-        <div>
-            <input type="text" placeholder="Поиск по наименованию или артикулу">
-            <button>Найти</button>
+        <div class="cabinet__center df_jc_ac">
+            <input type="text" placeholder="Поиск по наименованию...">
+            <button class="back__blue"><span>Найти</span> <img src="image/search%20(2)%201.png" alt="search"></button>
         </div>
-        <div>
-            <img src="image/user%20(1)%201.png" alt="user">
-            <p>Войти</p>
-        </div>
-        <div>
-            <img src="image/heart%201.png" alt="heart">
-            <p>Избранное</p>
-        </div>
-        <div>
-            <img src="image/magazin.png" alt="magazin">
-            <p>В корзине <br>
-                нет товаров</p>
+        <div class="cabinet__right">
+            <div class="df_jc_ac cabinet__items text__color-dark">
+                <img class="image__color" src="image/user%20(1)%201.png" alt="user">
+                <p class="text__color-dark">Войти</p>
+            </div>
+            <div class="df_jc_ac cabinet__items text__color-dark">
+                <img class="image__color" src="image/heart%201.png" alt="heart">
+                <p class="text__color-dark">Избранное</p>
+            </div>
+            <div class="df_jc_ac text__color-dark basket">
+                <img class="image__color" src="image/magazin.png" alt="basket">
+                <p class="text__color-dark">В корзине <br>
+                    нет товаров</p>
+            </div>
         </div>
     </div>
 </div>
+<!--share__box-->
+<div class="share__box wrap">
+    <div class="share__carousel">
+        <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/image_bg.png" alt="Slide 2">
+                    <div class="carousel-caption df_jc_ac">
+                        <div class="carousel__box-info ">
+                            <div class="carousel__item-info">
+                                <span class="text_slider-main text__color-dark">Сцепление в сборе</span>
+                                <span class="text_slider-mark text__color-dark-gray">0AMCLUTCH</span>
+                            </div>
+                            <div class="carousel__price">
+                                <span class="text__color-blue text__price__slider__big">14 499,99 ₽</span>
+                                <span class="text__color-gray text__price__slider__little">18 550,99 ₽ </span>
+                            </div>
+                            <button class="buttons back__blue text__color-white">
+                                <img src="image/magazin-white.png" alt="basket">В корзину
+                            </button>
+                        </div>
+                        <div class="carousel__image">
+                            <img src="image/zapchasti/sceplenie.png" alt="item">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/image_bg.png" alt="Slide 2">
+                    <div class="carousel-caption df_jc_ac">
+                        <div class="carousel__box-info ">
+                            <div class="carousel__item-info">
+                                <span class="text_slider-main text__color-dark">Сцепление в сборе</span>
+                                <span class="text_slider-mark text__color-dark-gray">0AMCLUTCH</span>
+                            </div>
+                            <div class="carousel__price">
+                                <span class="text__color-blue text__price__slider__big">14 499,99 ₽</span>
+                                <span class="text__color-gray text__price__slider__little">18 550,99 ₽ </span>
+                            </div>
+                            <button class="buttons back__blue text__color-white">
+                                <img src="image/magazin-white.png" alt="basket">
+                                В корзину
+                            </button>
+                        </div>
+                        <div class="carousel__image">
+                            <img src="image/zapchasti/sceplenie.png" alt="item">
+                        </div>
+                    </div>
 
+                </div>
+                <div class="carousel-item">
+                    <img src="image/image_bg.png" alt="Slide 2">
+                    <div class="carousel-caption df_jc_ac">
+                        <div class="carousel__box-info ">
+                            <div class="carousel__item-info">
+                                <span class="text_slider-main text__color-dark">Сцепление в сборе</span>
+                                <span class="text_slider-mark text__color-dark-gray">0AMCLUTCH</span>
+                            </div>
+                            <div class="carousel__price">
+                                <span class="text__color-blue text__price__slider__big">14 499,99 ₽</span>
+                                <span class="text__color-gray text__price__slider__little">18 550,99 ₽ </span>
+                            </div>
+                            <button class="buttons back__blue text__color-white">
+                                <img src="image/magazin-white.png" alt="basket">
+                                В корзину
+                            </button>
+                        </div>
+                        <div class="carousel__image">
+                            <img src="image/zapchasti/sceplenie.png" alt="item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="share__right">
+        <div class="share__item">
+            <p class="text__color-dark text_share">Акция</p>
+            <div class="df_jc_ac share__item__info">
+                <img src="image/zapchasti/mufta.png" alt="mufta">
+                <p class="text__color-dark text_share_info">Обгонная муфта
+                    гидротрансформатор <br>
+                    <span class="text_info text__color-gray">BW-SP-2 SONNAX</span></p>
+            </div>
+            <div class="share__price-btn">
+                <span class="text__color_yellow text__price__big">4 430₽</span>
+                <span class="text__price__little text__color-gray">5 430₽</span>
+                <button class="share__button back__blue"><img src="image/magazin-white.png" alt="basket"></button>
+            </div>
+        </div>
+        <div class="share__item">
+            <p class="text__color-dark text_share">Акция</p>
+            <div class="df_jc_ac share__item__info">
+                <img src="image/zapchasti/frukciynidiski.png" alt="mufta">
+                <p class="text__color-dark text_share_info">Комплект фрикционных дисков<br>
+                    <span class="text_info text__color-gray">BW-SP-2 SONNAX</span>
+                </p>
+            </div>
+            <div class="share__price-btn">
+                <span class="text__color_yellow text__price__big">4 430₽</span>
+                <span class="text__price__little text__color-gray">5 430₽</span>
+                <button class="share__button back__blue"><img src="image/magazin-white.png" alt="basket"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--slider__center-->
+<div class="slider__center wrap">
+    <div id="carouselWithIndicators" class="carousel slide df_jc_ac" data-bs-ride="carousel">
+        <div class="carousel-inner inner-two">
+            <div class="carousel-item active">
+                <div class="category">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Масла</h2>
+                        <span class="text_info">Трансмиссионное масло; <br>
+                            присалка в масло акпп</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/oil.png" alt="oil"></div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="category">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Фильтры</h2>
+                        <span class="text_info">Масляный фильтр; <br>
+                    фильтр воздушный</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/filter.png" alt="filter"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="category">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Радиаторы</h2>
+                        <span class="text_info">Дополнительные <br>
+                            радиаторы</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/radiator.png" alt="radiator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner inner-two">
+            <div class="carousel-item active">
+                <div class="category ">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Масла</h2>
+                        <span class="text_info">Трансмиссионное масло; <br>
+                            присалка в масло акпп</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/oil.png" alt="oil"></div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="category ">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Фильтры</h2>
+                        <span class="text_info">Масляный фильтр; <br>
+                    фильтр воздушный</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/filter.png" alt="filter"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="category ">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Радиаторы</h2>
+                        <span class="text_info">Дополнительные <br>
+                            радиаторы</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/radiator.png" alt="radiator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner inner-two">
+            <div class="carousel-item active">
+                <div class="category">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Масла</h2>
+                        <span class="text_info">Трансмиссионное масло; <br>
+                            присалка в масло акпп</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/oil.png" alt="oil"></div>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="category">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Фильтры</h2>
+                        <span class="text_info">Масляный фильтр; <br>
+                    фильтр воздушный</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/filter.png" alt="filter"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="category">
+                    <div class="category__info">
+                        <h2 class="text_category_dark">Радиаторы</h2>
+                        <span class="text_info">Дополнительные <br>
+                            радиаторы</span>
+                        <button class="buttons back__blue">Перейти</button>
+                    </div>
+                    <div><img src="image/zapchasti/radiator.png" alt="radiator"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--links-->
+<div class="shops__links wrap">
+    <button class="buttons back__blue"><a class="text__color-white" href="#">Подборки товаров</a></button>
+    <button class="buttons back__white"><a href="#">Акции</a></button>
+    <button class="buttons back__white"><a href="#">Сейчас покупают</a></button>
+</div>
+<!--products-->
+<div class="wrap">
+    <div class="products">
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_1.png" alt="product 1"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price"><p class="text_info">ЦЕНА <a href="#">по запросу</a></p></div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_2.png" alt="product 2"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price">
+                <span class="text__color_yellow text__price__big">4 430₽</span>
+                <span class="text__price__little text__color-gray">5 430₽</span>
+            </div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_1.png" alt="product 1"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price"><p class="text_info">ЦЕНА <a href="#">по запросу</a></p></div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_3.png" alt="product 3"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price"><p class="text_info">ЦЕНА <a href="#">по запросу</a></p></div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_1.png" alt="product 1"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price"><p class="text_info">ЦЕНА <a href="#">по запросу</a></p></div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_2.png" alt="product 2"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price">
+                <span class="text__color_yellow text__price__big">4 430₽</span>
+                <span class="text__price__little text__color-gray">5 430₽</span>
+            </div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_1.png" alt="product 1"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price"><p class="text_info">ЦЕНА <a href="#">по запросу</a></p></div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_image"><img src="image/product/product_3.png" alt="product 3"></div>
+            <div class="assessment"><img src="image/product/Star%20.png" alt="star">
+                <p class="text__color-gray"><span class="text__color_yellow">4.5</span>10 отзывов</p></div>
+            <div class="product__name"><p class="text_category_dark">Intermediate accumelator sleeve</p></div>
+            <div class="product__price"><p class="text_info">ЦЕНА <a href="#">по запросу</a></p></div>
+            <div class="product__button">
+                <button class="buttons  back__blue"><img src="image/magazin-white.png" alt="basket">В корзину</button>
+                <img src="image/product/heart.png" alt="heart">
+                <img src="image/product/grafic.png" alt="grafic">
+            </div>
+        </div>
+    </div>
+    <button class="buttons product_btn text__color-blue back__white">Показать еще</button>
+</div>
+<!--news-->
+<div class="wrap news-title text_category_dark"><p>НОВОСТИ</p></div>
+<div class="line wrap">
+    <img src="image/product/Ellipse%207.png" alt="ellipse">
+    <img src="image/product/Ellipse%207.png" alt="ellipse">
+    <img src="image/product/Ellipse%207.png" alt="ellipse">
+</div>
+<div class="wrap news">
+    <div class="news-column">
+        <div>
+            <button class="news__button text__color-white">3 ноября</button>
+        </div>
+        <div class="news__link"><a href="#">Изменения на сайте</a></div>
+        <div><p class="text_news_info">Недавно на сайте мы ввели
+            очередную порцию изменений,
+            которые, как нам кажется, должны
+            улучшить функциональность сайта
+            и сделать его более удобным для
+            пользователей. Реакция посетителей
+            не заставила себя долго ждать...</p></div>
+    </div>
+    <div class="news-column">
+        <div>
+            <button class="news__button text__color-white">2 ноября</button>
+        </div>
+        <div class="news__link"><a href="#">Вышла новая версия для <br>
+            мобильных приложений</a></div>
+        <div><p class="text_news_info">
+            Что нового в 2.0: <br>
+            — добавлена история поиска; <br>
+            — добавлена синхронизация с сервером; <br>
+            — испрвление ошибок.
+        </p></div>
+    </div>
+    <div class="news-column">
+        <div>
+            <button class="news__button text__color-white">1 ноября</button>
+        </div>
+        <div class="news__link"><a href="#">Очередная порция обновлений для <br>
+            мобильных приложений</a></div>
+        <div><p class="text_news_info">
+            Что нового добавлено: <br>
+            — поддержка пуш-уведомлений; <br>
+            — разделы для покупателей; <br>
+            — просмотр покупателя в заказах; <br>
+            — возможность поиска; <br>
+            — исправление ошибок.
+        </p></div>
 
+    </div>
+    <div class="news-column">
+        <div>
+            <button class="news__button text__color-white">31 октября</button>
+        </div>
+        <div class="news__link"><a href="#">Интерфейс заказов для покупателей <br>
+            стал более функциональным</a></div>
+        <div><p class="text_news_info">Он позволяет выводить все
+            формируемые системой
+            уведомления(e-mail, смс, web) в
+            едином окне с системой удобной
+            фильтрации поиска.</p></div>
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer back__dark-blue wrap">
+    <div class="footer__up">
+        <div class="footer_left">
+            <div class="footer__katalog text__color-white">
+                <h2 class="text__color-dark-gray">КАТАЛОГ</h2>
+                <p>Каталог запчастей</p>
+                <p>Масла</p>
+                <p>Фильтра</p>
+                <p>Радиаторы</p>
+                <p>Sonnax</p>
+                <p>Manual</p>
+                <p>Новинки</p>
+                <p>Акции</p>
+            </div>
+            <div class="footer__rubrikator text__color-white">
+                <h2 class="text__color-dark-gray">РУБРИКАТОР</h2>
+                <p>Доставка</p>
+                <p>Оплата</p>
+                <p>Гарантия</p>
+                <p>Новости</p>
+                <p>Журнал</p>
+                <p>О магазине<p/>
+                <p>Контактная информация<p/>
+            </div>
+            <div class="footer__information text__color-white">
+                <h2 class="text__color-dark-gray">ИНФОРМАЦИЯ</h2>
+                <p>Пользовательское соглашение
+                    об использовании персональных данных</p>
+                <p>Политика конфиденциальности</p>
+                <p>Соглашение на рассылку
+                    рекламных материалов</p>
+                <p>Политика возвратов</p>
+                <p>Мы принимаем</p>
+                <div>
+                    <img src="image/icon/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a1%201.png" alt="mastercard">
+                </div>
+            </div>
+        </div>
+        <div class="footer_company_info text__color-white">
+            <div class="footer_company_contact">
+                <div class="footer_contact">
+                    <h2 class="text__color-dark-gray">КОНТАКТЫ</h2>
+                    <p>+7 383 291 92 86 </p>
+                    <p>info@avt-zap.ru</p>
+                </div>
+                <div class="footer_location">
+                    <h2 class="text__color-dark-gray">АДРЕС</h2>
+                    <p>г. Новосибирск, <br>
+                        ул. Планировочная, 5, офис 105</p>
+                </div>
+            </div>
+            <div class="footer_company_form">
+                <div class="contact_text">
+                    <div class="contact_text_info">
+                        <p class="text__color-dark-gray">Мы онлайн, воспользуйтесь</p>
+                        <span class="text__color-white">Форма обратной связи</span>
+                    </div>
+
+                    <p class="text__color-dark-gray">Подпишитесь на нашу расслыку и <br>
+                        вы первыми узнаете о скидках и акциях</p>
+                </div>
+                <div class="footer_btn">
+                    <input type="text" placeholder="Введите ваш email">
+                    <button class="back__blue">Подписаться</button>
+                </div>
+                <div class="footer__icon">
+                <img src="image/icon/facebook%201.png" alt="facebook">
+                <img src="image/icon/telegram%201.png" alt="telegram">
+                <img src="image/icon/twitter%201.png" alt="twitter">
+                <img src="image/icon/google-plus%201.png" alt="goodle-plus">
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_down text__color-dark-gray"><p>2017 © ООО «АВТ-ЗАП» - запчасти для акпп</p></div>
+</div>
 <!--bootstrap script-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
 </html>
